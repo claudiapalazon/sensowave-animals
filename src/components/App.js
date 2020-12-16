@@ -7,13 +7,11 @@ import Footer from "./Footer";
 import "../stylesheets/App.scss";
 
 const App = () => {
-  // state
   const [animals, setAnimals] = useState([]);
   const [modal, setModal] = useState(false);
   const [animal, setDetail] = useState([]);
   const [animalFiltered, setFilter] = useState([]);
 
-  // get Animal Data
   useEffect(() => {
     setAnimals(data);
     setFilter(data);

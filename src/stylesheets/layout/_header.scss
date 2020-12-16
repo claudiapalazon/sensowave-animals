@@ -1,0 +1,14 @@
+.Header {
+  height: 150px;
+  background-color: white;
+  display: flex;
+  border-bottom: 1px solid #82c341;
+  .logo {
+    height: 110px;
+    margin: 20px 0 0 40px;
+  }
+  .title {
+    margin: 55px 0 0 20px;
+    color: #069059;
+  }
+}

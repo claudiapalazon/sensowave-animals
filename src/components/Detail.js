@@ -12,7 +12,9 @@ const Detail = (props) => {
       <h3>Sex: {props.animal.sex}</h3>
       <h4>Created: {props.animal.createdAt}</h4>
       <h4>Updated: {props.animal.updatedAt}</h4>
-      <div onClick={props.closeDetail}>X</div>
+      <div className="close" onClick={props.closeDetail}>
+        X
+      </div>
     </article>
   );
 };

@@ -1,0 +1,50 @@
+.Main {
+  margin: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  table {
+    text-align: left;
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 50px;
+  }
+  thead {
+    th {
+      padding: 20px;
+      background-color: #82c341;
+      color: black;
+    }
+  }
+  tbody {
+    .item,
+    .itemOdd {
+      cursor: pointer;
+      th,
+      td {
+        padding: 20px;
+      }
+    }
+    .item {
+      background-color: #fafafa;
+      &:hover {
+        background-color: green;
+        th,
+        td {
+          color: white;
+        }
+      }
+    }
+    .itemOdd {
+      background-color: #e5e5e5;
+      &:hover {
+        background-color: green;
+        th,
+        td {
+          color: white;
+        }
+      }
+    }
+  }
+}

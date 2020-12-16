@@ -1,8 +1,6 @@
-import React from "react";
-
 const Filter = (props) => {
   return (
-    <section>
+    <section className="filter">
       <h3>Filter by sex:</h3>
       <label className="container">All</label>
       <input
