@@ -1,0 +1,111 @@
+* {
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: Arial;
+}
+html {
+  min-height: 100%;
+  position: relative;
+}
+body {
+  margin: 0;
+  margin-bottom: 100px;
+}
+.Main {
+  margin: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  table {
+    text-align: left;
+    width: 100%;
+    border-collapse: collapse;
+    // border: 2px solid #82c341;
+  }
+  thead {
+    th {
+      padding: 20px;
+      background-color: #82c341;
+      color: black;
+    }
+  }
+  tbody {
+    .item,
+    .itemOdd {
+      cursor: pointer;
+      th,
+      td {
+        padding: 20px;
+      }
+    }
+    .item {
+      background-color: #fafafa;
+      &:hover {
+        background-color: green;
+        th,
+        td {
+          color: white;
+        }
+      }
+    }
+    .itemOdd {
+      background-color: #e5e5e5;
+      &:hover {
+        background-color: green;
+        th,
+        td {
+          color: white;
+        }
+      }
+    }
+  }
+}
+
+.modal {
+  background-color: white;
+  width: 600px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 30px;
+}
+.background-opacity {
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.4);
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+}
+
+.Header {
+  height: 150px;
+  background-color: white;
+  display: flex;
+  border-bottom: 1px solid #82c341;
+  .logo {
+    height: 110px;
+    margin: 20px 0 0 40px;
+  }
+  .title {
+    margin: 55px 0 0 20px;
+    color: #069059;
+  }
+}
+
+.Footer {
+  background-color: #272727;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
